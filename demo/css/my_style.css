@@ -1,0 +1,160 @@
+body > header{
+    padding: 10px;
+}
+body > header > div{
+    background-image: linear-gradient(to bottom,#bfbfbf,#929292);
+    border-radius: 10px;
+    border-bottom: #bfbfbf 2px solid;
+    height: 60px
+}
+body > header .nav_bar .nav_bar_item{
+    display: inline-block;
+    text-align: center;
+    border-right: #929292 1px solid;
+    cursor: pointer;
+}
+body > header .nav_bar .nav_bar_item:last-child{
+    border-right: none
+}
+body > header .nav_bar .nav_bar_item > div{
+    position: relative;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: "Raleway";
+    text-transform: none;
+    letter-spacing: 0px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold
+}
+body > header .nav_bar .nav_bar_item:first-child{
+    background-image: linear-gradient(to bottom,#8ec6eb,#21a9fd);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px
+}
+body > header .nav_bar .nav_bar_item > div > .label{
+    padding-top: 7px;
+    display: block
+}
+body > header .nav_bar .nav_bar_item:hover{
+    background-color: #929292;
+}
+
+body > header .nav_bar .nav_bar_item:last-child:hover{
+    background-color: transparent;
+}
+body > header .nav_bar .nav_bar_item .sub_menu{
+    width: 200px;
+    background-color: #929292;
+    border-radius: 10px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    display: none
+}
+body > header .nav_bar .nav_bar_item .sub_menu .sub_menu_item{
+    display: block;
+    padding-left: 35px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    cursor: pointer;
+    text-align: left;
+    border-radius: 10px
+}
+body > header .nav_bar .nav_bar_item .sub_menu .sub_menu_item:hover{
+    background-image: linear-gradient(to bottom,#8ec6eb,#21a9fd);
+    color: white
+}
+body > header .nav_bar .nav_bar_item .sub_menu_border_img{
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 53px;
+    left: 20px;
+    display: none
+}
+body > header .nav_bar .nav_bar_item .form-control,
+.search_box_mobile .form-control
+{
+    background-color: white;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px
+}
+body > header .nav_bar .nav_bar_item .input-group-text,
+.search_box_mobile .input-group-text
+{
+    background-color: white;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    background-color: gray;
+    color: white
+}
+.mobile_navs{
+    display: none;
+    padding-top: 10px;
+    padding-right: 10px
+}
+.mobile_navs img{
+    width: 35px;
+    height: 35px;
+    margin-left: 10px
+}
+.search_box_mobile{
+    display: none;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 50px;
+    background-color: #bfbfbf;
+    height: 50px;
+    padding-top: 5px;
+    padding-right: 20px;
+    padding-left: 20px;
+    display: none
+}
+@media(min-width: 900px){
+    body > header .nav_bar .nav_bar_item .sub_menu{
+        position: absolute;
+        left: 0;
+        top: 80px;    
+    }
+    body > header .nav_bar .nav_bar_item{
+        height: 58px
+    }
+}
+@media(max-width: 900px){
+    body > header .nav_bar{
+        position: absolute;
+        top: 50px;
+        background-color: #bfbfbf;
+        left: 15px;
+        right: 0;
+        width: 100%;
+        display: none
+    }
+    body > header .nav_bar .nav_bar_item{
+        width: 100%;
+        display: block
+    }
+    .mobile_navs{
+        display: block;
+        width: 100%
+    }
+    body > header .nav_bar .nav_bar_item{
+        min-height: 58px;
+        text-align: left
+    }
+    body > header .nav_bar .nav_bar_item:hover{
+        border-left: white 3px solid
+    }
+    body > header .nav_bar .nav_bar_item .sub_menu{
+        width: 100%
+    }
+    body > header .nav_bar .nav_bar_item .sub_menu .sub_menu_item{
+        margin-top: 20px
+    }
+    
+}
